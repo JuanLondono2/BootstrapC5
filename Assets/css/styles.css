@@ -1,0 +1,6 @@
+.custom-image{
+    background-image: url(./images/shikamaru.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
