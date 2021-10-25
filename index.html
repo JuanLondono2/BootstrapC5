@@ -24,59 +24,168 @@
     <link rel="stylesheet" href="./Assets/css/styles.css" />
   </head>
   <body>
-    <!--Portafolio-->
-    <section class="mt-5">
-      <!--Contenedor de las cajas-->
-      <h1 class="text-center shadow">Portafolio</h1>
-      <div class="d-flex flex wrap justify-content-around mt-5 shadow ">
-        <!--cajas-->
-        <div
-          class="card text-white bg-secondary mb-3 "
-          style="max-width: 18rem"
-        >
-          <div class="card-header font-weight-bold font-italic">HTML & CSS</div>
-          <div class="card-body">
-            <h5 class="card-title">HTML & CSS</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+  <div class="contenido d-flex flex-wrap">
+    <ul class="nav nav-pills position-fixed nav-fill font-weight-lighter">
+      <li class="nav-item text-md-center">
+        <a class="nav-link text-white" href="#perfil">Perfil</a>
+      </li>
+      <li class="nav-item text-md-center">
+        <a class="nav-link text-white" href="#experiencia">Experiencia</a>
+      </li>
+      <li class="nav-item text-md-center">
+        <a class="nav-link text-white" href="#educacion">Educación</a>
+      </li>
+      <li class="nav-item text-md-center">
+        <a class="nav-link text-white" href="#contacto"> Contacto</a>
+      </li>
+      <li class="nav-item text-md-center">
+        <a class="nav-link text-white" href="#contactame"> Ponte en Contacto</a>
+      </li>
+    </ul>
+    <section class="contenedor d-block align-content-center align-middle shadow">
+      <scroll-container style="margin-top: 150px;">
+        <scroll-page id="perfil" >
+          <div>
+            <figure>
+              <img src="Foto.jpg" alt="" />
+            </figure>
+          </div>
+
+          <div>
+            <h1>Juan Sebastian Londoño</h1>
+            <br />
+            <h2>Economista</h2>
+            <br />
+            <p>
+              Economista con conocimientos en desarrollo WEB con HTML5 y CSS
             </p>
           </div>
-        </div>
+        </scroll-page>
 
-        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem">
-          <div class="card-header font-weight-bold font-italic">GIT</div>
-          <div class="card-body">
-            <h5 class="card-title">GIT</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-
-        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem">
-          <div class="card-header font-weight-bold font-italic">Bootstrap</div>
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-
-        <div class="card text-white bg-info mb-3" style="max-width: 18rem">
-            <div class="card-header font-weight-bold font-italic">JavaScript</div>
-            <div class="card-body">
-              <h5 class="card-title">JavaScript</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </p>
-            </div>
-          </div>
+        <scroll-page id="experiencia">
+<section class="mt-0">
+  <div class="d-flex flex wrap justify-content-around mt-0 shadow">
+    <!--cajas-->
+    <div class="card text-white bg-transparent mb-3" style="max-width: 18rem">
+      <div class="card-header font-weight-bold font-italic">Analista Operativo - Fondo Nacional de Garantías</div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
       </div>
+    </div>
+
+    <div class="card text-white bg-transparent mb-3" style="max-width: 18rem">
+      <div class="card-header font-weight-bold font-italic">Analista de Crédito - Banco AV Villas</div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-white bg-transparent mb-3" style="max-width: 18rem">
+      <div class="card-header font-weight-bold font-italic">Practivcante - Banco AV Villas</div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-white bg-transparent mb-3" style="max-width: 18rem">
+      <div class="card-header font-weight-bold font-italic">JavaScript</div>
+      <div class="card-body">
+        <h5 class="card-title">JavaScript</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+        </scroll-page>
+
+        <scroll-page id="educacion">
+          <div>
+            <h3>Economía - Universidad Santo Tomás</h3>
+            <p>
+              Pregrado en economía en la Universidad Santo Tomás de Colombia,
+              cursado entre 2015 y 2020
+            </p>
+            <h3>Intercambio - Universidad Pública de Navarra</h3>
+            <p>
+              Intercambio en el semestre de primavera en la Universidad Pública
+              de Navarra en Pamplona, España
+            </p>
+          </div>
+        </scroll-page>
+
+        <scroll-page id="contacto">
+          <div>
+            <h3>Telefono</h3>
+            <p>+57 3164508123</p>
+            <h3>Correo Electronico</h3>
+            <p>J.sebastian04.L@gmail.com</p>
+            <h3>
+              <a
+                href="https://www.linkedin.com/in/juan-sebastian-londono-col/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </h3>
+          </div>
+        </scroll-page>
+
+        <scroll-page id="contactame">
+          <form id="contact" action="">
+            <div class="seccion-formulario">
+              <div class="texto-contactame">
+                <h2>Contáctame</h2>
+                <b></b>
+              </div>
+              <div class="formulario">
+                <legend>Datos personales</legend>
+                <div class="texput">
+                  <div class="inputs">
+                    <input
+                      name="nombre"
+                      type="text"
+                      placeholder="Nombre"
+                      required
+                    />
+                    <input
+                      name="email"
+                      type="email"
+                      placeholder="Correo"
+                      required
+                    />
+                    <input
+                      name="subject"
+                      type="text"
+                      placeholder="Asunto"
+                      required
+                    />
+                  </div>
+                  <!--Permite crear el recuadro para introducir el mensaje-->
+                  <textarea
+                    name="textarea"
+                    rows="7"
+                    cols="50"
+                    placeholder="Escribe Tu Mensaje"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="button"><button>Enviar Mensaje</button></div>
+            </div>
+          </form>
+        </scroll-page>
+      </scroll-container>
     </section>
+  </div>
   </body>
 </html>
